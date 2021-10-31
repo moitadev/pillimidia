@@ -1,0 +1,647 @@
+:root {
+    --mainColor: #82c4cc;
+  }
+
+* {
+  font-family: 'Ciutadella';
+}
+
+body{
+    font-weight: 500;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 19px;
+}
+
+#app, #home, #sony {
+    background-color: #fafafa;
+    color: #191919!important;
+}
+
+#home, #sobre {
+    font-size: 19px;
+
+}
+
+.pm-white-link a{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+.pm-white-link a:hover {
+    color: transparent;
+    -webkit-text-stroke: 0.3px var(--mainColor);
+  }
+  
+  @supports not(-webkit-text-stroke: 2px red) {
+    a:hover {
+      text-shadow:
+        3px 3px 0 var(--mainColor),
+        -1px -1px 0 var(--mainColor),
+        1px -1px 0 var(--mainColor),
+        -1px 1px 0 var(--mainColor),
+        1px 1px 0 var(--mainColor);
+    }
+  }
+
+.link-box{
+    cursor: url("../assets/arrow.png"), auto;
+}
+
+.home-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/header.jpg");
+    color: #fafafa;
+}
+
+.pm-nav{
+  position: absolute!important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030!important;
+}
+
+
+.fa-youtube{
+    color: #fafafa!important;
+}
+
+#clientes .pm-nav{
+    color: #fafafa!important;
+}
+
+.jumbotron{
+  background-color: #fafafa;
+}
+
+.jumbotron h1, .jumbotron p{
+    font-weight: bold;
+    text-align: right;
+}
+
+.pm-para{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.jumbotron a.text-link{
+    text-align: center;
+    color: #191919;
+}
+.jumbotron a.text-link:hover{
+    text-decoration: none;
+    color: #4b4b4b;
+    cursor: pointer;
+}
+
+.fa-icon {
+    width: auto;
+    height: 1em; /* or any other relative font sizes */
+  
+    /* You would have to include the following two lines to make this work in Safari */
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+footer {
+    background-color: #191919!important;
+    color: #fafafa!important;
+}
+
+.f-pm{
+    background-color: #191919!important;
+    color: #fafafa!important;
+}
+
+.lg-para{
+    background-image: url('../assets/logo_negativo.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    opacity: 1.0!important;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.display-res-1{
+    text-align: right;
+    font-size: 16.4vw;
+    font-weight: bold;
+}
+
+.display-res-2{
+    text-align: right;
+    font-size: 14vw;
+    font-weight: bold;
+}
+
+.display-res-3{
+    text-align: right;
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+.display-res-4{
+    text-align: right;
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.display-res-6{
+    text-align: right;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold!important;
+}
+.wordWrap {
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+#home .fa-icon{
+    color: #fafafa;
+}
+
+.client-box{
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+    color: #fafafa;
+}
+
+
+.top-right {
+    position: absolute;
+    top: 0.1%;
+}
+
+.centeredTxt {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.centeredTxt1 {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+#home .fa-icon:hover{
+    text-decoration: none;
+    color: #adadad;
+}
+/*
+#home .jumbotron {
+    animation: background-fade 5s forwards;
+    -webkit-animation: background-fade 5s forwards;
+    -moz-animation: background-fade 5s forwards;
+}
+@-webkit-keyframes background-fade {
+    80% {
+        background:#82c4cc;
+    }
+    100% {
+        background:#fafafa;
+    }
+}
+@-moz-keyframes background-fade {
+    80% {
+        background:#82cdcc;
+    }
+    100% {
+        background:#fafafa;
+    }
+}
+@keyframes background-fade {
+    80% {
+        background:#82c4cc;
+    }
+    100% {
+        background:#fafafa;
+    }
+}
+*/
+.jumbotron {
+    margin-bottom: 3rem;
+    padding: 9rem 3rem 8rem;
+    border-radius: 0;
+    text-align: center; 
+}
+
+footer h1, footer b, footer p, footer {
+    color: #fafafa!important;
+}
+
+#sony .jumbotron {
+    background-image: url('../assets/sony.jpg');
+}
+
+#amazonprime .jumbotron {
+    background-image: url('../assets/amazonprime.jpg');
+}
+
+#camaro .jumbotron {
+    background-image: url('../assets/camaro.jpg');
+}
+#cruze .jumbotron {
+    background-image: url('../assets/cruze.jpg');
+}
+#dji .jumbotron {
+    background-image: url('../assets/dji.jpg');
+}
+
+#intel .jumbotron {
+    background-image: url('../assets/intel.jpg');
+}
+#jaguar .jumbotron {
+    background-image: url('../assets/jaguar.jpg');
+}
+
+#landrover .jumbotron {
+    background-image: url('../assets/landrover.jpg');
+}
+
+#leroymerlin .jumbotron {
+    background-image: url('../assets/leroymerlin.jpg');
+}
+#onix .jumbotron {
+    background-image: url('../assets/onix.jpg')
+}
+
+#volkswagen .jumbotron {
+    background-image: url('../assets/volkswagen.jpg');
+}
+
+#volvo .jumbotron {
+    background-image: url('../assets/volvo.jpg');
+}
+
+/* mobile parallax fix */
+@media only screen and (max-width: 768px) {
+    .lg-para, .cl-para, .pm-para, .background-cover {
+      background-attachment: scroll;
+      height: 80%;
+    }
+
+
+    #home video{
+        margin-left: -1.8%;
+        width: 111%;
+        height: 100%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    }
+    
+    #home video:hover{
+        -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0);
+        transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+}
+
+.display-res{
+    font-size: 7vw;
+}
+
+/* mobile parallax fix */
+@media only screen and (min-width: 1080px) {
+    #home video{
+        margin-left: -1.8%;
+        width: 105%;
+        height: 100%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    }
+    
+    #home video:hover{
+        -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0);
+        transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+}
+
+.cl-para{
+    background-image: url('../assets/cl-cover.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.cover-img{
+    background-size: cover;
+    left:0;
+    bottom:-5px;
+}
+
+
+.hr-l35{
+    border: 1.5px solid #82c4cc;
+    width: 35%;
+    margin-left: 0;
+    left: 0;
+    padding-left: 0;
+}
+.hr-l25{
+    border: 1px solid #82c4cc;
+    width: 25%;
+    margin-left: 0;
+    left: 0;
+    padding-left: 0;
+}
+  
+.hr-l25r{
+    border: 1.5px solid #82c4cc;
+    width: 35%;
+    margin-right: 0;
+    right: 0;
+    padding-right: 0;
+}
+
+#clientes .fa-icon{
+    color: #fafafa!important;
+}
+
+.sp-hk{
+    margin-bottom: 1rem;
+    padding: 3rem 1rem 2rem;
+    border-radius: 0;
+    text-align: center; 
+}
+
+.sp-hk-sm{
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem 2rem;
+    border-radius: 0;
+    text-align: center; 
+}
+
+.pm-white-text, .pm-white-link{
+    color: #fafafa!important;
+}
+
+.pm-white-link:hover{
+    color: #d3d3d3!important;
+    text-decoration: none;
+}
+
+#clientes .p-4 img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#clientes .p-4 img:hover{
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    position: relative; 
+    top: -5px;
+}
+
+#app .textw-link {
+    background:
+    linear-gradient(
+      to right,
+      var(--mainColor) 0%,
+      var(--mainColor) 5px,
+      transparent 5px
+    );
+   background-repeat: repeat-x;
+   background-size: 100%;
+ color: #fafafa!important;
+ padding-left: 10px;
+ text-decoration: none;
+  }
+
+#app .textw-link:hover {
+    background:
+    linear-gradient(
+      to right,
+      var(--mainColor) 0%,
+      var(--mainColor) 5px,
+      transparent
+    );
+  }
+
+.text-link{
+    color: #191919!important;
+}
+
+.text-link:hover{
+    text-decoration: none!important;
+    color: #5e5e5e!important;
+}
+
+.b-nav-item{
+    color: #191919!important;
+}
+.b-nav-item:hover{
+    text-decoration: none!important;
+    color: #4b4b4b!important;
+}
+
+.videos-bl{
+    background-color: #191919!important;
+    color: #fafafa!important;
+}
+
+.vd-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#home video{
+    margin-left: -1.8%;
+    width: 106%;
+    height: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+}
+
+#home video:hover{
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+ video{
+    margin-left: 0;
+    margin-bottom: -2%;
+    width: 100%;
+    height: 100%;
+}
+
+.txt-img{
+    width: 100%;
+    height: 100%;
+}
+
+.txt-img #textOnImg{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.7s linear;
+}
+
+.txt-img:hover #textOnImg{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.7s linear;
+}
+
+.v1{
+    background-image: url("../assets/amazonprimecover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v2{
+    background-image: url("../assets/camarocover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v3{
+    background-image: url("../assets/cruzecover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v4{
+    background-image: url("../assets/djicover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v5{
+    background-image: url("../assets/intelcover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v6{
+    background-image: url("../assets/jaguarcover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v7{
+    background-image: url("../assets/landrovercover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v8{
+    background-image: url("../assets/leroymerlincover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v9{
+    background-image: url("../assets/onixcover.jpg");
+    background-repeat: no-repeat;
+}
+.v10{
+    background-image: url("../assets/sonycover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v11{
+    background-image: url("../assets/volkswagencover.jpg");
+    background-repeat: no-repeat;
+}
+
+.v12{
+    background-image: url("../assets/volvocover.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.blackToBlue {
+  -webkit-animation-name: blackToBlue;
+  animation-name: blackToBlue;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes blackToBlue {
+    0% {
+        background-color: #191919;
+        opacity:10;
+    }
+    90% {
+        background-color: #111822;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes blackToBlue {
+    0% {
+        background-color: #191919;
+        opacity:10;
+    }
+    90% {
+        background-color: #111822;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.pageLoader{
+  width: 100vw;
+  height: 100vh;
+  background-color:#191919;
+  overflow:hidden;
+  /*animation: blackToBlue 2s 3.1s;*/
+}
+
+.logoWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    /*animation: fadeOut 2.7s 3.1s;*/
+}
+
+.cls-1{fill:none;stroke:#FAFAFA;stroke-width:3;stroke-miterlimit:10;}
+  
+.cls-1{
+    stroke: #fafafa;
+    fill: none;
+    stroke-dasharray: 10000;
+    opacity: 10;
+    animation: animateLogo 3s cubic-bezier(.17,.67,.83,.67);
+}
+
+@keyframes animateLogo {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset:10000;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset:10000;
+    }
+
+    100% {
+        opacity: 10;
+        stroke-dashoffset:0;
+    }
+}
+
